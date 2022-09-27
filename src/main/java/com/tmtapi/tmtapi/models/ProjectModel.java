@@ -9,16 +9,16 @@ public class ProjectModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
-    private Integer projectId;
+    private Long projectId;
     
     private String name;
     private String description;
 
-    public Integer getProjectId() {
+    public Long getProjectId() {
         return projectId;
     }
 
-    public void setProjectId(Integer projectId){
+    public void setProjectId(Long projectId){
         this.projectId = projectId;
     }
 
