@@ -2,21 +2,23 @@ package com.tmtapi.tmtapi.models;
 
 import javax.persistence.*;
 
+@Entity
+@Table( name = "projects" )
 public class ProjectModel {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
-    private int projectId;
+    private Integer projectId;
     
     private String name;
     private String description;
 
-    public int getProjectId() {
+    public Integer getProjectId() {
         return projectId;
     }
 
-    public void setProjectId(int projectId){
+    public void setProjectId(Integer projectId){
         this.projectId = projectId;
     }
 
