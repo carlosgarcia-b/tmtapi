@@ -7,7 +7,7 @@ import com.tmtapi.tmtapi.models.ProjectModel;
 import com.tmtapi.tmtapi.services.ProjectService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/project")
