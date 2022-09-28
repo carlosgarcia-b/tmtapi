@@ -26,7 +26,7 @@ public class TaskAssigneeService {
         return taskAssigneeRepository.findById(taskAssigneeId);
     }
 
-    public ArrayList<TaskAssigneeModel> getAssigneeId(String assigneeId){
+    public ArrayList<TaskAssigneeModel> getByAssigneeId(String assigneeId){
         return taskAssigneeRepository.findByAssigneeId(assigneeId);
     }
 
