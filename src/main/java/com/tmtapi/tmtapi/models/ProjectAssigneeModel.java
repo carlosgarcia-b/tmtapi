@@ -7,7 +7,6 @@ import javax.persistence.*;
 public class ProjectAssigneeModel {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private String projectAssigneeId;
     
@@ -15,11 +14,11 @@ public class ProjectAssigneeModel {
     private Long assigneeId;
     private String team;
 
-    public String getProjectAssigneeId() {
+    public String getprojectAssigneeId() {
         return projectAssigneeId;
     }
 
-    public void setProjectAssigneeId(String projectAssigneeId){
+    public void setprojectAssigneeId(String projectAssigneeId){
         this.projectAssigneeId = projectAssigneeId;
     }
 
