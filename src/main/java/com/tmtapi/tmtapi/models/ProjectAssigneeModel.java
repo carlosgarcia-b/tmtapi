@@ -11,7 +11,7 @@ public class ProjectAssigneeModel {
     private String projectAssigneeId;
     
     private Long projectId;
-    private Long assigneeId;
+    private String assigneeId;
     private String team;
 
     public String getprojectAssigneeId() {
@@ -30,11 +30,11 @@ public class ProjectAssigneeModel {
         this.projectId = projectId;
     }
 
-    public Long getAssigneeId() {
+    public String getAssigneeId() {
         return assigneeId;
     }
 
-    public void setAssigneeId(Long assigneeId){
+    public void setAssigneeId(String assigneeId){
         this.assigneeId = assigneeId;
     }
 
